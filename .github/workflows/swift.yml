@@ -18,11 +18,10 @@ jobs:
     - uses: actions/checkout@v3
     - name: Set up Swift
       run: |
-        brew install swiftenv
-        swiftenv install 5.5
-        swiftenv global 5.5
+        brew install mint
+        mint install swift@5.5
 
     - name: Build
-      run: swift build -v
+      run: mint run swift build -v
     - name: Run tests
-      run: swift test -v
+      run: mint run swift test -v
