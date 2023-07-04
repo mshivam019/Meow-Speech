@@ -5,7 +5,7 @@
 // Do not edit it by hand because the contents will be replaced.
 
 import PackageDescription
-//import AppleProductTypes
+import AppleProductTypes
 
 let package = Package(
     name: "My App",
